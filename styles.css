@@ -195,4 +195,7 @@ input[type="submit"]:hover {
   .slideshow-container {
       flex-direction: column-reverse; /* Reverse the order of child elements */
   }
+  .container {
+      flex-direction: column-reverse; /* Reverse the order of child elements */
+  }
 }
