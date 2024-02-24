@@ -1,0 +1,186 @@
+/* Global styles */
+body {
+       font-family: 'Open Sans', sans-serif; /* Default font for all pages */
+        margin: 0;
+        padding: 0;
+
+    background-color: #90a9ef;
+  }
+  
+  header {
+    text-align: left;
+    padding: 20px;
+    background-color: #90a9ef;
+  }
+  
+  nav {
+    background-color: #390867;
+    text-align: center; /* Center the navigation links */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Specific styles for each page */
+  h1 {
+    font-size: 36px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  .logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Add margin to separate from the title */
+    float: left; /* Float the logo to the left */
+    border-radius: 50%; /* Round out the corners of the logo image */
+  }
+  .about-section {
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+   
+  }
+  
+  .text, .slideshow-container {
+    flex: 1;
+  }
+  
+  .text {
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Round border */
+    padding: 20px;
+  }
+  
+  .slideshow-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slideshow {
+    max-width: 100%;
+    max-height: 300px; /* Fixed height for the slideshow */
+    overflow: hidden; /* Hide overflow to prevent resizing */
+  }
+  
+  .slideshow img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the images */
+  }
+  
+  .welcome-section {
+    padding: 20px;
+  }
+  
+  .welcome-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: center; /* Center the image */
+  }
+  
+  .image img {
+    max-width: 40%; /* Ensure the image doesn't exceed its container */
+    height: auto;
+    border-radius: 30%; /* Create an oval shape */
+  }
+
+  .booking-section {
+    padding: 20px;
+  }
+  
+  .booking-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text, .form {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .form {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 300px; /* Adjust the max-width of the form as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    border: 2px solid #ccc; /* Add a border */
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin: 0;
+    padding: 5px;
+    background-color: #74f2a6;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+  

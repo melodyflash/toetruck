@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toe Truck - Request a Booking</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="purpletoetruck.png" alt="Toe Truck Logo" class="logo">
+    <h1>The Toe Truck</h1>
+    <p>Call the toe truck for all your pet's nail trimming needs!</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="booking.html">Request a Booking</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="booking-section">
+      <div class="booking-content">
+        <div class="text">
+          <h2>Request a Booking</h2>
+          <p>Welcome to our booking page! You can request multiple bookings for your beloved pets here. Simply fill out the form below, and we'll get in touch with you to discuss your needs further.</p>
+          <p>We understand that each pet is unique, and we're committed to providing personalized care tailored to your pet's requirements. Whether it's a one-time appointment or recurring sessions, we're here to help.</p>
+          <p>Our friendly team is dedicated to ensuring a stress-free experience for both you and your pet. Your satisfaction and your pet's well-being are our top priorities.</p>
+          <p>If you have any specific requests or questions, feel free to include them in the form, and we'll do our best to accommodate your needs.</p>
+          <p>We look forward to pampering your pet and providing the care they deserve!</p>
+        </div>
+        <div class="form">
+          <form id="bookingForm">
+            <div class="form-group">
+              <h3>Pet Name(s):</h3>
+              <input type="text" id="petName" name="petName" required>
+            </div>
+            <div class="form-group">
+              <h3>Needs:</h3>
+              <textarea id="needs" name="needs" required></textarea>
+            </div>
+            <div class="form-group">
+              <h3>Date:</h3>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
