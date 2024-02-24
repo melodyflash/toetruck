@@ -192,4 +192,7 @@ input[type="submit"]:hover {
   .booking-content {
       flex-direction: column-reverse; /* Reverse the order of child elements */
   }
+  .slideshow-container {
+      flex-direction: column-reverse; /* Reverse the order of child elements */
+  }
 }
