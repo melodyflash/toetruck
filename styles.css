@@ -129,8 +129,8 @@ p {
 
 .booking-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap; /* Allow services to wrap to the next line */
+  justify-content: space-between; /* Distribute services evenly */
 }
 
 .text,
@@ -147,6 +147,7 @@ form {
   max-width: 300px; /* Adjust the max-width of the form as needed */
   margin: 0 auto; /* Center the form horizontally */
   border: 2px solid #ccc; /* Add a border */
+  border-radius: 20px;
   padding: 20px;
 }
 
@@ -203,8 +204,8 @@ input[type="submit"]:hover {
   margin-bottom: 20px;
   padding: 20px;
   border: 2px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9; /* Background color for consistency */
+  border-radius: 20px;
+  
 }
 
 
@@ -229,6 +230,6 @@ input[type="submit"]:hover {
       flex-direction: column-reverse; /* Reverse the order of child elements */
   }
   .services-content {
-      flex-direction: column; /* Arrange services in a single column */
+      flex-direction: column-reverse; 
   }
 }
