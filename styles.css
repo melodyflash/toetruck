@@ -137,8 +137,9 @@ p {
 
 .text,
 .form {
-  width: 100%;
+  width: 40%;
   padding: 10px;
+  
 }
 
 .form {
