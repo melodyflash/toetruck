@@ -147,6 +147,7 @@ form {
   max-width: 300px; /* Adjust the max-width of the form as needed */
   margin: 0 auto; /* Center the form horizontally */
   border: 2px solid #ccc; /* Add a border */
+  border-radius: 20px;
   padding: 20px;
 }
 
