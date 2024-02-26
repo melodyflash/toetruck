@@ -223,7 +223,7 @@ input[type="submit"]:hover {
 
 
 /* Media query for narrow screens (e.g., mobile devices) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100%) {
   .booking-content {
       flex-direction: column-reverse; /* Reverse the order of child elements */
   }
