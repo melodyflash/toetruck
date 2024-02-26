@@ -187,6 +187,36 @@ input[type="submit"]:hover {
   background-color: #555;
 }
 
+/* Services page styles */
+.services-section {
+  padding: 20px;
+}
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow services to wrap to the next line */
+  justify-content: space-between; /* Distribute services evenly */
+}
+
+.service {
+  flex: 1 1 30%; /* Flexbox shorthand for flex-grow, flex-shrink, flex-basis */
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Background color for consistency */
+}
+
+
+.service h2 {
+  margin-top: 0;
+}
+
+.service p {
+  margin-bottom: 0;
+}
+
+
 /* Media query for narrow screens (e.g., mobile devices) */
 @media screen and (max-width: 600px) {
   .booking-content {
@@ -197,5 +227,8 @@ input[type="submit"]:hover {
   }
   .container {
       flex-direction: column-reverse; /* Reverse the order of child elements */
+  }
+  .services-content {
+      flex-direction: column; /* Arrange services in a single column */
   }
 }
