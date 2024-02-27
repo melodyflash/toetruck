@@ -1,20 +1,22 @@
 /* Global styles */
 body {
-  font-family: 'Open Sans', sans-serif; /* Default font for all pages */
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #90a9ef;
+  background-color: #dbe5f1; /* Light blue background */
+  color: #333; /* Dark text color */
 }
 
 header {
   text-align: left;
   padding: 20px;
-  background-color: #90a9ef;
+  background-color: #512da8; /* Dark purple header background */
+  color: white; /* White text color */
 }
 
 nav {
-  background-color: #390867;
-  text-align: center; /* Center the navigation links */
+  background-color: #6741d9; /* Purple navigation background */
+  text-align: center;
 }
 
 nav ul {
@@ -32,20 +34,20 @@ nav ul li a {
   padding: 10px 20px;
   color: white;
   text-decoration: none;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #555;
+  background-color: #9575cd; /* Lighter purple on hover */
 }
 
 main {
   padding: 20px;
 }
 
-/* Specific styles for each page */
 h1 {
   font-size: 36px;
+  color: #512da8; /* Dark purple heading color */
 }
 
 p {
@@ -53,43 +55,148 @@ p {
 }
 
 .logo {
-  width: 150px; /* Adjust size as needed */
+  width: 150px;
   height: auto;
-  margin-right: 10px; /* Add margin to separate from the title */
-  float: left; /* Float the logo to the left */
-  border-radius: 50%; /* Round out the corners of the logo image */
+  margin-right: 10px;
+  float: left;
+  border-radius: 50%;
 }
 
-.about-section {
+/* Welcome section */
+.welcome-section {
   padding: 20px;
+
 }
 
-.container {
+.welcome-content {
   display: flex;
-  flex-wrap: wrap; /* Allow services to wrap to the next line */
-  justify-content: space-between; /* Distribute services evenly */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .text,
-.slideshow-container {
-  flex: 1 1 10%;
+.image {
+  flex: 1 1 100%; /* Full width on small screens, stack on top of each other */
 }
 
 .text {
-  border: 2px solid #ccc;
-  border-radius: 20px; /* Round border */
+  border: 2px solid #512da8; /* Dark purple border */
+  border-radius: 10px;
   padding: 20px;
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 100%; /* Ensure image fills its container */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Booking section */
+.booking-section {
+  padding: 20px;
+
+}
+
+.booking-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text,
+.form {
+  flex: 1 1 100%; /* Full width on small screens, stack on top of each other */
+  margin-bottom: 20px;
+}
+
+.form {
+  padding: 20px;
+  background-color: #512da8; /* Dark purple form background */
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 0;
+  padding: 5px;
+  background-color: #9575cd; /* Lighter purple heading background */
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #512da8; /* Dark purple border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #6741d9; /* Purple button background */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #9575cd; /* Lighter purple on hover */
+}
+
+/* Services page */
+.services-section {
+  padding: 20px;
+
+}
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service {
+  flex: 1 1 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #512da8; /* Dark purple service background */
+  border-radius: 10px;
+  color: white;
+}
+
+.service h2 {
+  margin-top: 0;
+}
+
+.service p {
+  margin-bottom: 0;
+}
+
+/* About Us page */
+.about-section {
+  padding: 20px;
+
 }
 
 .slideshow-container {
   padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #512da8; /* Dark purple background */
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .slideshow {
-  max-width: 300px;
+  max-width: 100%;
   max-height: 300px; /* Fixed height for the slideshow */
   overflow: hidden; /* Hide overflow to prevent resizing */
 }
@@ -101,139 +208,16 @@ p {
   margin: 0 auto; /* Center the images */
 }
 
-.welcome-section {
-  padding: 20px;
-}
 
-.welcome-content {
-  display: flex;
-  flex-wrap: wrap; /* Allow services to wrap to the next line */
-  justify-content: space-between; /* Distribute services evenly */
-}
-
-.text {
-  flex: 1;
-}
-
-.image {
-  flex: 1;
-  text-align: center; /* Center the image */
-}
-
-.image img {
-  max-width: 40%; /* Ensure the image doesn't exceed its container */
-  height: auto;
-  border-radius: 30%; /* Create an oval shape */
-}
-
-.booking-section {
-  padding: 20px;
-}
-
-.booking-content {
-  display: flex;
-  flex-wrap: wrap; /* Allow services to wrap to the next line */
-  justify-content: space-between; /* Distribute services evenly */
-}
-
-.text,
-.form {
-  width: 40%;
-  padding: 10px;
-  
-}
-
-.form {
-  text-align: center;
-}
-
-form {
-  max-width: 300px; /* Adjust the max-width of the form as needed */
-  margin: 0 auto; /* Center the form horizontally */
-  border: 2px solid #ccc; /* Add a border */
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-h3 {
-  margin: 0;
-  padding: 5px;
-  background-color: #74f2a6;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="date"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-top: 5px;
-}
-
-input[type="submit"] {
-  width: 100%;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-input[type="submit"]:hover {
-  background-color: #555;
-}
-
-/* Services page styles */
-.services-section {
-  padding: 20px;
-}
-
-.services-content {
-  display: flex;
-  flex-wrap: wrap; /* Allow services to wrap to the next line */
-  justify-content: space-between; /* Distribute services evenly */
-}
-
-.service {
-  flex: 1 1 10%; /* Flexbox shorthand for flex-grow, flex-shrink, flex-basis */
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 2px solid #ccc;
-  border-radius: 20px;
-  
-}
-
-
-/* .service h2 {
-  margin-top: 0;
-} */
-
-/* .service p {
-  margin-bottom: 0;
-} */
-
-
-/* Media query for narrow screens (e.g., mobile devices) */
-@media screen and (max-width: 100%) {
-  .booking-content {
-      flex-direction: column-reverse; /* Reverse the order of child elements */
-  }
-  .slideshow-container {
-      flex-direction: column-reverse; /* Reverse the order of child elements */
-  }
-  .container {
-      flex-direction: column-reverse; /* Reverse the order of child elements */
-  }
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .welcome-content,
+  .booking-content,
   .services-content {
-      flex-direction: column-reverse; 
+    flex-direction: column; /* Stack content on smaller screens */
+  }
+
+  .service {
+    flex-basis: 100%; /* Services occupy full width on smaller screens */
   }
 }
