@@ -113,6 +113,7 @@ p {
 
 .form {
   padding: 20px;
+  color: white;
   background-color: #512da8; /* Dark purple form background */
   border-radius: 10px;
 }
