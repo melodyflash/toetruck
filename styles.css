@@ -214,7 +214,8 @@ input[type="submit"]:hover {
 @media screen and (max-width: 768px) {
   .welcome-content,
   .booking-content,
-  .services-content {
+  .services-content,
+  .about-content {
     flex-direction: column; /* Stack content on smaller screens */
   }
 
