@@ -184,23 +184,33 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .slideshow-container {
   padding: 20px;
   background-color: #512da8; /* Dark purple background */
   border-radius: 10px;
   margin-bottom: 20px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
 }
 
 .slideshow {
-  max-width: 100%;
+  max-width: 300px;
   max-height: 300px; /* Fixed height for the slideshow */
   overflow: hidden; /* Hide overflow to prevent resizing */
+ 
 }
 
 .slideshow img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  max-width: 300px;
+  max-height: 300px;
+  
   margin: 0 auto; /* Center the images */
 }
 
